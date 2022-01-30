@@ -23,6 +23,8 @@ import { UsuariosComponent } from './modulo_admin/components/usuarios/usuarios.c
 import { MascotaComponent } from './modulo_cliente/components/mascota/mascota.component';
 import { OfertasComponent } from './modulo_cliente/components/ofertas/ofertas.component';
 import { OfertaComponent } from './modulo_cliente/components/oferta/oferta.component';
+import {ProductoComponent} from "./modulo_cliente/components/producto/producto.component";
+import {ProductosComponent} from "./modulo_cliente/components/productos/productos.component";
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { OfertaComponent } from './modulo_cliente/components/oferta/oferta.compo
     UsuariosComponent,
     MascotaComponent,
     OfertasComponent,
-    OfertaComponent
+    OfertaComponent,
+    ProductoComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
