@@ -1,1 +1,75 @@
-<p>oferta works!</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3>Registrar Oferta</h3>
+</div>
+
+<div class="row text-end">
+  <div class="col">
+    <button class="btn btn-danger" routerLink="/ofertas">
+      <i class="fas fa-arrow-left"></i>
+      Regresar
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <form (ngSubmit)="guardar( formOferta )" #formOferta="ngForm" >
+        <div class="form-group mb-3">
+          <label>Id</label>
+          <input
+            type="text"
+            class="form-control"
+            id="_id"
+            name="_id"
+            [(ngModel)]="oferta._id"
+            placeholder="Identificador"
+            disabled>
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Producto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="producto"
+            name="producto"
+            [(ngModel)]="oferta.producto"
+            placeholder="Producto con descuento">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Descuento</label>
+          <input
+            type="text"
+            class="form-control"
+            id="descuento"
+            name="descuento"
+            [(ngModel)]="oferta.descuento"
+            placeholder="Descuento">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Precio sin descuento</label>
+          <input
+            type="text"
+            class="form-control"
+            id="precio"
+            name="precio"
+            [(ngModel)]="oferta.precio"
+            placeholder="Precio Normal del Producto">
+        </div>
+
+        <br>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary w-25">
+            <i class="fas fa-save"></i>
+            Guardar
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

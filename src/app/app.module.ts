@@ -25,6 +25,7 @@ import { OfertasComponent } from './modulo_cliente/components/ofertas/ofertas.co
 import { OfertaComponent } from './modulo_cliente/components/oferta/oferta.component';
 import {ProductoComponent} from "./modulo_cliente/components/producto/producto.component";
 import {ProductosComponent} from "./modulo_cliente/components/productos/productos.component";
+import {MascotasComponent} from "./modulo_cliente/components/mascotas/mascotas.component";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import {ProductosComponent} from "./modulo_cliente/components/productos/producto
     OfertasComponent,
     OfertaComponent,
     ProductoComponent,
-    ProductosComponent
+    ProductosComponent,
+    MascotaComponent,
+    MascotasComponent
   ],
   imports: [
     BrowserModule,

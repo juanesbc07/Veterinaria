@@ -1,1 +1,98 @@
-<p>mascota works!</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3>Registrar Mascota</h3>
+</div>
+
+<div class="row text-end">
+  <div class="col">
+    <button class="btn btn-danger" routerLink="/mascotas">
+      <i class="fas fa-arrow-left"></i>
+      Regresar
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <form (ngSubmit)="guardar( formMascota )" #formMascota="ngForm" >
+        <div class="form-group mb-3">
+          <label>Id</label>
+          <input
+            type="text"
+            class="form-control"
+            id="_id"
+            name="_id"
+            [(ngModel)]="mascota._id"
+            placeholder="Identificador"
+            disabled>
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="mascota.nombre"
+            placeholder="Nombre de la mascota">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Edad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="edad"
+            name="edad"
+            [(ngModel)]="mascota.edad"
+            placeholder="Edad de la mascota">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Especie</label>
+          <input
+            type="text"
+            class="form-control"
+            id="especie"
+            name="especie"
+            [(ngModel)]="mascota.especie"
+            placeholder="especie de la mascota">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Raza</label>
+          <input
+            type="text"
+            class="form-control"
+            id="raza"
+            name="raza"
+            [(ngModel)]="mascota.raza"
+            placeholder="Raza de la mascota">
+        </div>
+
+        <div class="form-group mb-3">
+          <label>Sexo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="sexo"
+            name="sexo"
+            [(ngModel)]="mascota.sexo"
+            placeholder="Sexo de la mascota">
+        </div>
+
+        <br>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary w-25">
+            <i class="fas fa-save"></i>
+            Guardar
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
